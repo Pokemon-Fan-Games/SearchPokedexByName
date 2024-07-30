@@ -8,5 +8,5 @@ Doy un ejemplo, si buscan R saldrá primero Bulbasaur antes que Ratata ya que Bu
 
 ### Video del funcionamiento
 
-![video](https://github.com/user-attachments/assets/494589fe-6391-4dd8-9ea1-36a56806662f)
+https://github.com/user-attachments/assets/494589fe-6391-4dd8-9ea1-36a56806662f
 
