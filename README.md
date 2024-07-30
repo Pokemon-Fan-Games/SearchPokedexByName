@@ -8,4 +8,4 @@ Doy un ejemplo, si buscan R saldrá primero Bulbasaur antes que Ratata ya que Bu
 
 ### Video del funcionamiento
 
-![Video del funcionamiento](PokedexSearchByName.mp4)
+![Video del funcionamiento](PokedexSearchByName.mov)
