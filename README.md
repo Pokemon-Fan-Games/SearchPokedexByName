@@ -7,5 +7,5 @@ Este Plugin les permite buscar en la Pokédex por nombre, presionando la F les s
 Doy un ejemplo, si buscan R saldrá primero Bulbasaur antes que Ratata ya que Bulbasaur está antes y contiene la R pero si buscan ra saldrá ratatta, siempre recomendaría buscar con al menos 3 letras para que no haya tantas posibilidades de coincidencia.
 
 ### Video del funcionamiento
+https://github.com/user-attachments/assets/494589fe-6391-4dd8-9ea1-36a56806662f
 
-![Video del funcionamiento](PokedexSearchByName.mov)
