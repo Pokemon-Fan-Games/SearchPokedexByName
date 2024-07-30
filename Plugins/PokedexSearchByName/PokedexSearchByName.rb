@@ -39,7 +39,7 @@ class PokemonPokedex_Scene
             pbSEPlay("GUI pokedex open")
             pbDexEntry(@sprites["pokedex"].index)
           end
-        elsif Input.triggerex?(:F)
+        elsif Input.trigger?(Input::SPECIAL)
           searchByName()
         end
       end
