@@ -10,3 +10,7 @@ Doy un ejemplo, si buscan R saldrá primero Bulbasaur antes que Ratata ya que Bu
 
 https://github.com/user-attachments/assets/494589fe-6391-4dd8-9ea1-36a56806662f
 
+
+## Instalación
+
+Descarguen el zip del ultimo [release](https://github.com/Pokemon-Fan-Games/SearchPokedexByName/releases/latest) y extraiganlo en la carpeta de su proyecto.
