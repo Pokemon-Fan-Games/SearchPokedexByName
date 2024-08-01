@@ -2,9 +2,9 @@
 
 ## Descripción
 
-Este Plugin les permite buscar en la Pokédex por nombre, presionando la D/SPECAL les saldrá un cuadro de busqueda para escribir y al darle enter buscará al pokémon y si lo han visto se desplazará hasta su posición de la Pokédex, la busqueda es que lo escriben esté incluído en el nombre del Pokémon.
+Este Plugin les permite buscar en la Pokédex por nombre, presionando la D/SPECIAL les saldrá un cuadro de búsqueda para escribir, a medida que van escribiendo si lo que escriben está incluído en el nombre de un pokémon los moverá en el listado a la posición de ese pokémon.
 
-Doy un ejemplo, si buscan R saldrá primero Bulbasaur antes que Ratata ya que Bulbasaur está antes y contiene la R pero si buscan ra saldrá ratatta, siempre recomendaría buscar con al menos 3 letras para que no haya tantas posibilidades de coincidencia.
+La busqueda es hacia adelante desde la posicion actual buscando la primer coincidencia, si desde la posicion actual hasta el final del listado no se encontró el pokémon busca desde el inicio hasta la posición actual. Si tampoco lo encuentra, se queda en la posicion actual.
 
 ### Video del funcionamiento
 
