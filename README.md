@@ -8,7 +8,10 @@ La busqueda es hacia adelante desde la posicion actual buscando la primer coinci
 
 ### Video del funcionamiento
 
-https://github.com/user-attachments/assets/494589fe-6391-4dd8-9ea1-36a56806662f
+
+https://github.com/user-attachments/assets/6a062d7e-5dd0-407c-a462-ff51d10a199e
+
+
 
 
 ## Instalación
