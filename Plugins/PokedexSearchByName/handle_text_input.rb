@@ -99,8 +99,8 @@ class WindowTextEntryKeyboardPerKey < Window_TextEntry
 end
 
 def pb_free_text_with_on_input(msg_window, current_text, password_box, max_length, width = 240, on_input = nil)
-  window = Window_TextEntry_Keyboard_Per_Key.new(current_text, 0, 0, width, 64, nil, false, on_input)
-  configure_window(window, msg_window, password_box, max_length)
+  window = WindowTextEntryKeyboardPerKey.new(current_text, 0, 0, width, 64, nil, false, on_input)
+  configure_window(window, msg_window, password_box, max_length, current_text)
 
   Input.text_input = true
   loop do
@@ -117,9 +117,9 @@ def handle_input(window, msg_window, current_text = '')
   Input.update
   if Input.triggerex?(:ESCAPE)
     window.text = current_text
-    return
+    return true
   elsif Input.triggerex?(:RETURN)
-    return
+    return true
   end
 
   window.update
@@ -127,44 +127,14 @@ def handle_input(window, msg_window, current_text = '')
   yield if block_given?
 end
 
-def configure_window(window, msg_window, password_box, max_length)
+def configure_window(window, msg_window, password_box, max_length, current_text)
   window.maxlength = max_length
   window.visible = true
   window.z = 99_999
-  pb_position_near_msg_window(window, msg_window, :right)
+  pbPositionNearMsgWindow(window, msg_window, :right)
   window.text = current_text
   window.password_char = '*' if password_box
 end
-
-# def pbFreeTextWithOnInput(msgwindow, currenttext, passwordbox, maxlength, width = 240, on_input = nil)
-#   window = Window_TextEntry_Keyboard_Per_Key.new(currenttext, 0, 0, width, 64, heading = nil, usedarkercolor = false, on_input)
-#   ret = ''
-#   window.maxlength = maxlength
-#   window.visible = true
-#   window.z = 99_999
-#   pbPositionNearMsgWindow(window, msgwindow, :right)
-#   window.text = currenttext
-#   window.passwordChar = '*' if passwordbox
-#   Input.text_input = true
-#   loop do
-#     Graphics.update
-#     Input.update
-#     if Input.triggerex?(:ESCAPE)
-#       ret = currenttext
-#       break
-#     elsif Input.triggerex?(:RETURN)
-#       ret = window.text
-#       break
-#     end
-#     window.update
-#     msgwindow&.update
-#     yield if block_given?
-#   end
-#   Input.text_input = false
-#   window.dispose
-#   Input.update
-#   ret
-# end
 
 def pb_message_free_text_with_on_input(message, currenttext, passwordbox, maxlength, width = 240, on_input = nil, &block)
   msgwindow = pbCreateMessageWindow
@@ -175,3 +145,5 @@ def pb_message_free_text_with_on_input(message, currenttext, passwordbox, maxlen
   pbDisposeMessageWindow(msgwindow)
   retval
 end
+
+

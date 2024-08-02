@@ -16,7 +16,7 @@ class PokedexSearcher
 
   def open_search_box
     on_input = ->(text, char = '') { search_by_name(text, char) }
-    term = pbMessageFreeTextWithOnInput(_INTL('¿Qué Pokémon desea buscar?'), '', false, 32, width = 240, on_input = on_input)
+    term = pb_message_free_text_with_on_input(_INTL("¿Qué Pokémon desea buscar?"), "", false, 32, width = 240, on_input = on_input)
 
     return false if ['', nil].include?(term)
 
